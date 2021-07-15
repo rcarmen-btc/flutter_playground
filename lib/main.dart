@@ -62,6 +62,10 @@ abstract class SeinorDeveloper extends Person with ProgrammingSkills, Management
   SeinorDeveloper(String firstName, String lastName) : super(firstName, lastName);
 }
 
+abstract class JuniorDeveloper extends Person with ProgrammingSkills {
+  JuniorDeveloper(String firstName, String lastName) : super (firstName, lastName);
+}
+
 void main(List<String> args) {
   Student student = new Student("Elizabeth", "Olsen", "Cute-Pussy");
   print("This is a student: $student");
